@@ -1,0 +1,34 @@
+[PROJECT]
+Target=interrupciones.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=interrupciones.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Interrupciones\interrupciones]
+Type=4
+[mru-list]
+1=interrupciones.c
+
+[ProjectLog]
+Days=1
+D1=09-12-2021
+D1_L=2
+D1_L1=[83985]Project Opened.
+D1_L2=[86092]Project Closed.
+
+[Opened Files]
+1=interrupciones.c
+t1=1
+Count=1
+[interrupciones.c]
+Type=4
+[Units]
+Count=1
+1=interrupciones (main)
+
+[defines]
+buildcount=1

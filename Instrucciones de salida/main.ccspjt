@@ -1,0 +1,60 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[D:\Electronica\Pic\project2\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=3
+D1=24-11-2021
+D1_L=6
+D1_L1=[60157]Project Opened.
+D1_L2=[60164]Started Editing.
+D1_L3=[60558]Stopped Editing.
+D1_L4=[60875]Started Editing.
+D1_L5=[61314]Stopped Editing.
+TotalEdit=34
+TotalDebug=0
+D1_E=4
+D1_D=0
+D1_L6=[62121]Project Closed.
+D2=25-11-2021
+D2_L=10
+D2_L1=[57864]Project Opened.
+D2_L2=[57913]Started Editing.
+D2_L3=[58255]Stopped Editing.
+D2_L4=[58380]Started Editing.
+D2_L5=[58798]Stopped Editing.
+D2_E=30
+D2_D=0
+D2_L6=[59708]Started Editing.
+D2_L7=[60312]Stopped Editing.
+D2_L8=[75450]Started Editing.
+D2_L9=[76732]Stopped Editing.
+D2_L10=[79700]Project Closed.
+D3=26-11-2021
+D3_L=2
+D3_L1=[69211]Project Opened.
+D3_L2=[69241]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=5
+Count=1
+
+[defines]
+buildcount=7
+[main.c]
+Type=4
+[Units]
+Count=1
+1=main (main)

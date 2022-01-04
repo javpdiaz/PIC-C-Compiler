@@ -1,0 +1,19 @@
+#include <voltaje_referencia.h>
+#fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT
+
+#use fast_io(A)
+#use fast_io(B)
+
+void main()
+{
+
+	setup_vref(VREF_HIGH);
+
+	while(TRUE)
+	{
+
+
+		
+	}
+
+}

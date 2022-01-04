@@ -1,0 +1,54 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+021     main.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  @cinit1
+000004  main
+000009  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\Instrucciones de entrada\
+
+Project Files:
+    main.c                                                  [26-nov.-21 21:44  CRC=4FDCC39D]
+    main.h                                                  [26-nov.-21 19:16  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F627A.h           [08-sep.-15 14:14  CRC=1EA52415]
+
+Source signature=8D270BC7
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=FCC7
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

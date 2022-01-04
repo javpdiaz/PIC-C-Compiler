@@ -1,0 +1,21 @@
+#include <main.h>
+
+#fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT
+#use delay(clock = 20M)
+
+void main()
+{
+
+   TRISB = 0xFE;
+
+   while(TRUE)
+   {
+
+      PORTB = 0x01;
+      delay_ms(2000);
+      PORTB = 0x00;
+      delay_ms(2000);
+
+   }
+
+}

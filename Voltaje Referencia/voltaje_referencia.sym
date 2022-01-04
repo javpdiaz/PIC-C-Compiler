@@ -1,0 +1,53 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  main
+000004  @cinit1
+000009  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\Voltaje Referencia\
+
+Project Files:
+    voltaje_referencia.c                                    [01-ene.-22 23:36  CRC=EFE66AEA]
+    voltaje_referencia.h                                    [01-ene.-22 21:44  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F627A.h           [08-sep.-15 14:14  CRC=1EA52415]
+
+Source signature=2D30B314
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=2868
+
+Units:
+    voltaje_referencia (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   voltaje_referencia.xsym
+    Errors:      voltaje_referencia.err
+    Ext Symbols: voltaje_referencia.esym
+    INHX8:       voltaje_referencia.hex
+    Symbols:     voltaje_referencia.sym
+    List:        voltaje_referencia.lst
+    Debug/COFF:  voltaje_referencia.cof
+    Project:     voltaje_referencia.ccspjt
+    Call Tree:   voltaje_referencia.tre
+    Statistics:  voltaje_referencia.STA

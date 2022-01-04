@@ -1,0 +1,21 @@
+#include <voltaje_referencia.h>
+#fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT
+
+#use fast_io(A)
+#use fast_io(B)
+
+void main()
+{
+
+   set_tris_a(0x00);
+
+   setup_vref(15);
+
+   while(TRUE)
+   {
+
+
+      
+   }
+
+}

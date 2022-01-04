@@ -1,0 +1,81 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+020-021 @sprintf_string
+022     lcd_init.i
+022     lcd_clear.@SCRATCH1
+022     MAIN.@SCRATCH1
+023     lcd_putc.c
+023     lcd_init.@SCRATCH1
+024     lcd_gotoxy.x
+024     @delay_ms1.P1
+025     lcd_gotoxy.y
+026     lcd_gotoxy.address
+027     lcd_gotoxy.@SCRATCH1
+028     lcd_send_byte.address
+029     lcd_send_byte.n
+02A     lcd_send_byte.@SCRATCH1
+02B     lcd_send_nibble.nibble
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  @const547.call
+000012  @const567.call
+000021  @const568.call
+000030  @delay_ms1
+000044  lcd_send_nibble
+000070  lcd_send_byte
+000097  lcd_init
+0000C4  lcd_gotoxy
+0000D6  lcd_putc
+0000FA  lcd_clear
+000105  MAIN
+000105  @cinit1
+00010C  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\LCD 16x2\
+
+Project Files:
+    lcd16x2.c                                               [01-dic.-21 20:13  CRC=75744CBA]
+    lcd16x2.h                                               [01-dic.-21 19:10  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F627A.h           [08-sep.-15 14:14  CRC=1EA52415]
+    C:\Program Files (x86)\PICC\Drivers\LCD_16X2.c          [19-jun.-20 20:32  CRC=F406DE8D]
+
+Source signature=7C272DE9
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=C508
+
+Units:
+    lcd16x2 (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   lcd16x2.xsym
+    Errors:      lcd16x2.err
+    Ext Symbols: lcd16x2.esym
+    INHX8:       lcd16x2.hex
+    Symbols:     lcd16x2.sym
+    List:        lcd16x2.lst
+    Debug/COFF:  lcd16x2.cof
+    Project:     lcd16x2.ccspjt
+    Call Tree:   lcd16x2.tre
+    Statistics:  lcd16x2.STA

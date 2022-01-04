@@ -1,0 +1,48 @@
+[PROJECT]
+Target=lcd16x2contador.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=lcd16x2contador.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\LCD 16x2 contador\lcd16x2contador]
+Type=4
+[mru-list]
+1=lcd16x2contador.c
+
+[ProjectLog]
+Days=1
+D1=04-12-2021
+D1_L=10
+D1_L1=[50538]Project Opened.
+D1_L2=[50543]Started Editing.
+D1_L3=[50843]Stopped Editing.
+D1_L4=[52303]Started Editing.
+D1_L5=[52885]Stopped Editing.
+D1_L6=[53161]Started Editing.
+D1_L7=[53627]Stopped Editing.
+TotalEdit=8
+TotalDebug=0
+D1_E=8
+D1_D=0
+D1_L8=[53944]Project Closed.
+D1_L9=[63853]Project Opened.
+D1_L10=[63881]Project Closed.
+
+[Opened Files]
+1=lcd16x2contador.c
+t1=1
+Count=1
+2=lcd16x2contador.h
+t2=1
+[lcd16x2contador.c]
+Type=4
+
+[defines]
+buildcount=3
+[Units]
+Count=1
+1=lcd16x2contador (main)

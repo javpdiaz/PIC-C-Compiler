@@ -1,0 +1,40 @@
+[PROJECT]
+Target=comparador.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=comparador.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Comparador\comparador]
+Type=4
+[mru-list]
+1=comparador.c
+
+[ProjectLog]
+Days=1
+D1=01-01-2022
+D1_L=4
+D1_L1=[71744]Project Opened.
+D1_L2=[77522]Started Editing.
+D1_L3=[77869]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D1_E=1
+D1_D=0
+D1_L4=[78287]Project Closed.
+
+[Opened Files]
+1=comparador.c
+t1=9
+Count=1
+[comparador.c]
+Type=4
+
+[defines]
+buildcount=2
+[Units]
+Count=1
+1=comparador (main)

@@ -1,0 +1,5 @@
+ÀÄcontador 0-99
+   ÀÄmain  0/91  Ram=4
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÀÄ@delay_ms1  0/20  Ram=1

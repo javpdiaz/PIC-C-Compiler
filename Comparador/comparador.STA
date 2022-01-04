@@ -1,0 +1,45 @@
+
+ROM used:   39/1024 (4%)
+            39/1024 (4%) including unused fragments
+
+            0.1 Average locations per line
+            3.3 Average locations per statement
+
+RAM used:   5/224 (2%) at main() level
+            5/224 (2%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   30    12 100  comparador.c
+    4     0   0  comparador.h
+  521     0   0  C:\Program Files (x86)\PICC\Devices\16F627A.h
+----- -----
+  555    12 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     35  90    0    183  2.7  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              12
+    Comments                107
+    Volume (V)              186
+    Difficulty (D)          2.5
+    Effort to implement (E) 469
+    Time to implement (T)   0 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    88
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-003FF    35  985  
+
+
+

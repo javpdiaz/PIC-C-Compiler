@@ -1,0 +1,44 @@
+[PROJECT]
+Target=contador 0-99.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=contador 0-99.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Multiplexacion contador\contador 0-99]
+Type=4
+[mru-list]
+1=contador 0-99.c
+
+[ProjectLog]
+Days=2
+D1=30-11-2021
+D1_L=4
+D1_L1=[79514]Project Opened.
+D1_L2=[80334]Started Editing.
+D1_L3=[80936]Stopped Editing.
+TotalEdit=6
+TotalDebug=0
+D1_E=6
+D1_D=0
+D1_L4=[86095]Project Closed.
+D2=01-12-2021
+D2_L=2
+D2_L1=[68947]Project Opened.
+D2_L2=[69045]Project Closed.
+
+[Opened Files]
+1=contador 0-99.c
+t1=1
+Count=1
+[contador 0-99.c]
+Type=4
+
+[defines]
+buildcount=7
+[Units]
+Count=1
+1=contador 0-99 (main)

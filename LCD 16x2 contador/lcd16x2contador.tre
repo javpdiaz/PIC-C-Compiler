@@ -1,0 +1,64 @@
+ÀÄlcd16x2contador
+   ÀÄMAIN  0/108  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄlcd_init  0/45  Ram=2
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_send_nibble  0/44  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_send_nibble  0/44  Ram=1
+      ³  ÃÄ@const528  0/8  Ram=0
+      ³  ÃÄlcd_send_byte  0/39  Ram=3
+      ³  ³  ÃÄlcd_send_nibble  0/44  Ram=1
+      ³  ³  ÀÄlcd_send_nibble  0/44  Ram=1
+      ³  ÀÄ@delay_ms1  0/20  Ram=1
+      ÃÄCGRAM_position  0/14  Ram=2
+      ³  ÀÄsend_byte_data  0/18  Ram=3
+      ³     ÃÄsend_D7_D4  0/86  Ram=3
+      ³     ÀÄsend_D7_D4  0/86  Ram=3
+      ÃÄCGRAM_create_char  0/21  Ram=4
+      ³  ÀÄsend_byte_data  0/18  Ram=3
+      ³     ÀÄ*
+      ÃÄCGRAM_position  0/14  Ram=2
+      ³  ÀÄ*
+      ÃÄCGRAM_create_char  0/21  Ram=4
+      ³  ÀÄ*
+      ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ÀÄlcd_send_byte  0/39  Ram=3
+      ³     ÀÄ*
+      ÃÄ@const570  0/13  Ram=0
+      ÃÄlcd_putc  0/36  Ram=1
+      ³  ÃÄlcd_send_byte  0/39  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_send_byte  0/39  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_send_byte  0/39  Ram=3
+      ³     ÀÄ*
+      ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_U_541  0/53  Ram=2
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÃÄlcd_putc  0/36  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÃÄlcd_putc  0/36  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_putc  0/36  Ram=1
+      ³     ÀÄ*
+      ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ÀÄ*
+      ÃÄCGRAM_putc  0/6  Ram=1
+      ³  ÀÄsend_byte_data  0/18  Ram=3
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ÀÄ*
+      ÃÄCGRAM_putc  0/6  Ram=1
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÀÄlcd_clear  0/11  Ram=1
+         ÃÄ@const547  0/6  Ram=0
+         ÀÄlcd_putc  0/36  Ram=1
+            ÀÄ*

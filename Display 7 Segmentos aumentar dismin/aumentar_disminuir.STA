@@ -1,0 +1,46 @@
+
+ROM used:   125/1024 (12%)
+            125/1024 (12%) including unused fragments
+
+            0.2 Average locations per line
+            4.8 Average locations per statement
+
+RAM used:   17/224 (8%) at main() level
+            17/224 (8%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   54    26 100  aumentar_disminuir.c
+    4     0   0  aumentar_disminuir.h
+  521     0   0  C:\Program Files (x86)\PICC\Devices\16F627A.h
+----- -----
+  579    26 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20  16    1    151  3.9  @delay_ms2
+0    101  81    1    627  5.7  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               2
+    Statements              26
+    Comments                108
+    Volume (V)              893
+    Difficulty (D)          9.7
+    Effort to implement (E) 8616
+    Time to implement (T)   8 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   5
+    Maintainability (MI)    51
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-003FF   121  899  
+
+
+

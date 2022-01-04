@@ -1,0 +1,50 @@
+[PROJECT]
+Target=lcd16x2.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=lcd16x2.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\LCD 16x2\lcd16x2]
+Type=4
+[mru-list]
+1=lcd16x2.c
+
+[ProjectLog]
+Days=3
+D1=01-12-2021
+D1_L=4
+D1_L1=[69045]Project Opened.
+D1_L2=[71944]Started Editing.
+D1_L3=[72675]Stopped Editing.
+TotalEdit=8
+TotalDebug=0
+D1_E=8
+D1_D=0
+D1_L4=[80689]Project Closed.
+D2=04-12-2021
+D2_L=2
+D2_L1=[50427]Project Opened.
+D2_L2=[50537]Project Closed.
+D3=08-12-2021
+D3_L=2
+D3_L1=[61948]Project Opened.
+D3_L2=[62806]Project Closed.
+
+[Opened Files]
+1=lcd16x2.c
+t1=1
+Count=1
+2=C:\Program Files (x86)\PICC\Drivers\LCD_16X2.c
+t2=9
+[lcd16x2.c]
+Type=4
+
+[defines]
+buildcount=5
+[Units]
+Count=1
+1=lcd16x2 (main)

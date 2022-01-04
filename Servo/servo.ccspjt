@@ -1,0 +1,46 @@
+[PROJECT]
+Target=servo.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=servo.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Servo\servo]
+Type=4
+[mru-list]
+1=servo.c
+
+[ProjectLog]
+Days=4
+D1=16-12-2021
+D1_L=2
+D1_L1=[58327]Project Opened.
+D1_L2=[71908]Project Closed.
+D2=18-12-2021
+D2_L=2
+D2_L1=[47134]Project Opened.
+D2_L2=[51842]Project Closed.
+D3=21-12-2021
+D3_L=2
+D3_L1=[71212]Project Opened.
+D3_L2=[78327]Project Closed.
+D4=01-01-2022
+D4_L=2
+D4_L1=[71636]Project Opened.
+D4_L2=[71744]Project Closed.
+
+[Opened Files]
+1=servo.c
+t1=1
+Count=1
+[servo.c]
+Type=4
+[Units]
+Count=1
+1=servo (main)
+
+[defines]
+buildcount=1

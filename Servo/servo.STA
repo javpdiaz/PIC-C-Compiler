@@ -1,0 +1,54 @@
+
+ROM used:   298/1024 (29%)
+            298/1024 (29%) including unused fragments
+
+            0.4 Average locations per line
+            12.4 Average locations per statement
+
+RAM used:   26/224 (12%) at main() level
+            45/224 (20%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   26     9  38  servo.c
+    4     0   0  servo.h
+  521     0   0  C:\Program Files (x86)\PICC\Devices\16F627A.h
+  146    15  62  C:\Program Files (x86)\PICC\Drivers\servo_st.c
+----- -----
+  697    24 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   7    1             @delay_ms1
+0     36  12    0    171  4.1  timer_0
+0     12   4    0     78  1.6  servo_init
+ Inline        14    156  5.1  map_int
+ Inline         5             @MUL1616
+ Inline         5             @DIV1616
+0    143  48    1     83  2.5  servo_1_write
+0     40  13    1    143  1.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               5
+    Statements              24
+    Comments                111
+    Volume (V)              966
+    Difficulty (D)          14.1
+    Effort to implement (E) 13601
+    Time to implement (T)   13 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   2
+    Maintainability (MI)    161
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-0002E    43  0  
+0002F-003FF   251  726  
+
+
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../aumentar_disminuir.h
+16F627A.h
+-
+
+/cygdrive/d/Electronica/Pic/Project with CCS C Compiler/Display 7 Segmentos aumentar dismin/aumentar_disminuir.c
+aumentar_disminuir.h
+-
+

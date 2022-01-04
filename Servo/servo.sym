@@ -1,0 +1,89 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028-029 cont_st
+02A-033 pwm_st
+034     servo_1_write.angle1
+034     MAIN.@SCRATCH1
+035-036 map_int.x
+035     @delay_ms1.P1
+037-038 map_int.eMin
+039-03A map_int.eMax
+03B-03C map_int.sMin
+03D-03E map_int.sMax
+03F     map_int.@SCRATCH1
+040     map_int.@SCRATCH2
+041     map_int.@SCRATCH3
+042     map_int.@SCRATCH4
+043-044 @MUL1616.P1
+043-044 @DIV1616.P2
+045-046 @DIV1616.P1
+045-046 @MUL1616.P2
+047     @MUL1616.@SCRATCH1
+047     @DIV1616.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+00002F  timer_0
+000053  servo_init
+00005F  servo_1_write
+00006D  map_int
+00008B  @MUL1616
+0000B8  @DIV1616
+0000EE  @delay_ms1
+000102  @cinit1
+000102  MAIN
+000109  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\Servo\
+
+Project Files:
+    servo.c                                                 [16-dic.-21 16:29  CRC=585DB679]
+    servo.h                                                 [16-dic.-21 16:12  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F627A.h           [08-sep.-15 14:14  CRC=1EA52415]
+    C:\Program Files (x86)\PICC\Drivers\servo_st.c          [22-ago.-21 11:38  CRC=757AE1EB]
+
+Source signature=61F89E64
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=21E5
+
+Units:
+    servo (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   servo.xsym
+    Errors:      servo.err
+    Ext Symbols: servo.esym
+    INHX8:       servo.hex
+    Symbols:     servo.sym
+    List:        servo.lst
+    Debug/COFF:  servo.cof
+    Project:     servo.ccspjt
+    Call Tree:   servo.tre
+    Statistics:  servo.STA

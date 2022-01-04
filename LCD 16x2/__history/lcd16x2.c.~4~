@@ -1,0 +1,25 @@
+#include <lcd16x2.h>
+#fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT
+
+#use standard_io(B) 
+
+#define LCD_RS B0
+#define LCD_E B1
+#define LCD_DB4 B2
+#define LCD_DB5 B3
+#define LCD_DB6 B4
+#define LCD_DB7 B5
+
+#include <LCD_16X2.c>
+
+void main()
+{
+
+   while(TRUE)
+   {
+
+
+      //TODO: User Code
+   }
+
+}

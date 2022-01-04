@@ -1,0 +1,46 @@
+[PROJECT]
+Target=multiplexacion.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=multiplexacion.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Multiplexacion\multiplexacion]
+Type=4
+[mru-list]
+1=multiplexacion.c
+
+[ProjectLog]
+Days=2
+D1=29-11-2021
+D1_L=6
+D1_L1=[77154]Project Opened.
+D1_L2=[77991]Started Editing.
+D1_L3=[78291]Stopped Editing.
+D1_L4=[78965]Started Editing.
+D1_L5=[79343]Stopped Editing.
+TotalEdit=7
+TotalDebug=0
+D1_E=7
+D1_D=0
+D1_L6=[79343]Project Closed.
+D2=30-11-2021
+D2_L=2
+D2_L1=[79124]Project Opened.
+D2_L2=[79514]Project Closed.
+
+[Opened Files]
+1=multiplexacion.c
+t1=1
+Count=1
+[multiplexacion.c]
+Type=4
+
+[defines]
+buildcount=4
+[Units]
+Count=1
+1=multiplexacion (main)

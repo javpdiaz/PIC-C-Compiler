@@ -1,0 +1,63 @@
+
+ROM used:   571/1024 (56%)
+            571/1024 (56%) including unused fragments
+
+            0.7 Average locations per line
+            6.3 Average locations per statement
+
+RAM used:   25/224 (11%) at main() level
+            35/224 (16%) worst case
+
+Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   48    19  21  lcd16x2contador.c
+    4     0   0  lcd16x2contador.h
+  521     0   0  C:\Program Files (x86)\PICC\Devices\16f627a.h
+  263    72  79  C:\Program Files (x86)\PICC\Drivers\LCD_16X2.c
+----- -----
+  836    91 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   4    1             @delay_ms1
+0      8   1    0             @const528
+0     44   8    1    326  2.8  lcd_send_nibble
+0     39   7    3    235  3.8  lcd_send_byte
+0     45   8    2    380  4.7  lcd_init
+0     18   3    4    186  5.5  lcd_gotoxy
+0     36   6    1    272  4.1  lcd_putc
+0     11   2    1     17  0.8  lcd_clear
+0      6   1    0             @const547
+0     86  15    3    593  3.9  send_D7_D4
+0     18   3    3     98  2.8  send_byte_data
+0      6   1    1     35  1.4  CGRAM_putc
+0     14   2    2     55  2.3  CGRAM_position
+0     21   4    4    124  4.3  CGRAM_create_char
+0    108  19    1    461  2.8  MAIN
+0     13   2    0             @const570
+0     21   4    3             @DIV88
+0     53   9    2             @PRINTF_U_541
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               12
+    Statements              91
+    Comments                130
+    Volume (V)              4573
+    Difficulty (D)          39.1
+    Effort to implement (E) 178790
+    Time to implement (T)   2 hours, 46 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   14
+    Maintainability (MI)    61
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-003FF   567  453  
+
+
+

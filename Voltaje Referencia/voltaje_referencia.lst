@@ -1,0 +1,74 @@
+CCS PCM C Compiler, Version 5.049, 5967               01-ene.-22 23:36
+
+               Filename:   D:\Electronica\Pic\Project with CCS C Compiler\Voltaje Referencia\voltaje_referencia.lst
+
+               ROM used:   20 words (2%)
+                           Largest free fragment is 1004
+               RAM used:   5 (2%) at main() level
+                           5 (2%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   004
+0003:  NOP
+.................... #include <voltaje_referencia.h> 
+.................... #include <16F627A.h> 
+.................... //////////// Standard Header file for the PIC16F627A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F627A 
+....................  
+.................... #list 
+....................  
+.................... #use delay(crystal=20000000) 
+....................  
+....................  
+.................... #fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT 
+....................  
+.................... #use standard_io(A) 
+.................... #use fast_io(B) 
+....................  
+.................... void main() 
+0004:  MOVF   03,W
+0005:  ANDLW  1F
+0006:  MOVWF  03
+0007:  MOVLW  07
+0008:  MOVWF  1F
+0009:  BCF    03.7
+.................... { 
+....................  
+....................    //set_tris_a(0x00); 
+....................  
+....................    setup_vref(VREF_HIGH | 8 | VREF_A2); 
+000A:  MOVLW  C8
+000B:  BSF    03.5
+000C:  MOVWF  1F
+000D:  BSF    05.2
+....................  
+....................    while(TRUE) 
+....................    { 
+....................  
+....................          output_high(PIN_A0); 
+000E:  BCF    05.0
+000F:  BCF    03.5
+0010:  BSF    05.0
+0011:  BSF    03.5
+0012:  GOTO   00E
+....................        
+....................    } 
+....................  
+.................... } 
+0013:  SLEEP
+
+Configuration Fuses:
+   Word  1: 216A   NOWDT NOPUT HS MCLR BROWNOUT NOLVP NOCPD NOPROTECT

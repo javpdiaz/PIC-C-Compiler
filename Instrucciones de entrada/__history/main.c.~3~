@@ -1,0 +1,28 @@
+#include <main.h>
+#fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT
+#use delay(clock = 20M)
+
+#use fast_io(A)
+#use standard_io(B)
+
+void main()
+{
+
+   set_tris_a(0xff); //todo el puerto B puesto a entrada.
+   output_low(PIN_B0); //el pin donde va conectado el led se inicializa bajo.
+
+   while(TRUE)
+   {
+
+      if(input(PIN_A0) == 1)
+      {
+         output_high(PIN_B0);
+      }
+      else
+      {
+         output_low(PIN_A0);
+      }
+      
+   }
+
+}

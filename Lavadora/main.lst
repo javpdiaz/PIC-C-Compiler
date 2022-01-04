@@ -1,0 +1,162 @@
+CCS PCM C Compiler, Version 5.049, 5967               09-dic.-21 23:55
+
+               Filename:   D:\Electronica\Pic\Project with CCS C Compiler\Lavadora\main.lst
+
+               ROM used:   86 words (8%)
+                           Largest free fragment is 938
+               RAM used:   7 (3%) at main() level
+                           8 (4%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   018
+0003:  NOP
+.................... #include <main.h> 
+.................... #include <16F627A.h> 
+.................... //////////// Standard Header file for the PIC16F627A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F627A 
+....................  
+.................... #list 
+....................  
+.................... #use delay(crystal=20000000) 
+0004:  MOVLW  23
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   017
+000A:  MOVLW  06
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  7B
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  DECFSZ 00,F
+0016:  GOTO   00A
+0017:  RETURN
+....................  
+....................  
+.................... #fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT 
+....................  
+....................  
+.................... #use fast_io(A) 
+.................... #use fast_io(B) 
+....................  
+.................... void main() 
+0018:  MOVF   03,W
+0019:  ANDLW  1F
+001A:  MOVWF  03
+001B:  MOVLW  07
+001C:  MOVWF  1F
+001D:  BCF    03.7
+.................... { 
+....................  
+....................    set_tris_a(0xff); 
+001E:  MOVLW  FF
+001F:  BSF    03.5
+0020:  MOVWF  05
+....................    set_tris_b(0x00); 
+0021:  MOVLW  00
+0022:  MOVWF  06
+....................  
+....................    output_low(PIN_B3); 
+0023:  BCF    03.5
+0024:  BCF    06.3
+....................    output_low(PIN_B1); 
+0025:  BCF    06.1
+....................  
+....................    while(TRUE) 
+....................    { 
+....................  
+....................       if (input(PIN_A1) == 1)  // pin A1 es entrada para el encendido 
+0026:  BTFSS  05.1
+0027:  GOTO   054
+....................       { 
+....................  
+....................          while(input(PIN_A1) == 1); 
+0028:  BTFSC  05.1
+0029:  GOTO   028
+....................          delay_ms(10); 
+002A:  MOVLW  0A
+002B:  MOVWF  23
+002C:  CALL   004
+....................  
+....................          for (int i = 0; i < 24; ++i) 
+002D:  CLRF   21
+002E:  MOVF   21,W
+002F:  SUBLW  17
+0030:  BTFSS  03.0
+0031:  GOTO   054
+....................          { 
+....................             output_high(PIN_B3);  //pin B3 es salida 
+0032:  BSF    06.3
+....................             delay_ms(10000); 
+0033:  MOVLW  28
+0034:  MOVWF  22
+0035:  MOVLW  FA
+0036:  MOVWF  23
+0037:  CALL   004
+0038:  DECFSZ 22,F
+0039:  GOTO   035
+....................             output_low(PIN_B3); 
+003A:  BCF    06.3
+....................             delay_ms(3000); 
+003B:  MOVLW  0C
+003C:  MOVWF  22
+003D:  MOVLW  FA
+003E:  MOVWF  23
+003F:  CALL   004
+0040:  DECFSZ 22,F
+0041:  GOTO   03D
+....................             output_high(PIN_B1);  //pin B1 es salida 
+0042:  BSF    06.1
+....................             delay_ms(10000); 
+0043:  MOVLW  28
+0044:  MOVWF  22
+0045:  MOVLW  FA
+0046:  MOVWF  23
+0047:  CALL   004
+0048:  DECFSZ 22,F
+0049:  GOTO   045
+....................             output_low(PIN_B1); 
+004A:  BCF    06.1
+....................             delay_ms(3000); 
+004B:  MOVLW  0C
+004C:  MOVWF  22
+004D:  MOVLW  FA
+004E:  MOVWF  23
+004F:  CALL   004
+0050:  DECFSZ 22,F
+0051:  GOTO   04D
+0052:  INCF   21,F
+0053:  GOTO   02E
+....................  
+....................          }          
+....................           
+....................       } 
+0054:  GOTO   026
+....................           
+....................    } 
+....................  
+.................... } 
+0055:  SLEEP
+
+Configuration Fuses:
+   Word  1: 216A   NOWDT NOPUT HS MCLR BROWNOUT NOLVP NOCPD NOPROTECT

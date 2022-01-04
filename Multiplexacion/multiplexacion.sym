@@ -1,0 +1,56 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+020-029 display
+02A     @delay_ms1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  @delay_ms1
+000018  @cinit1
+000018  main
+00001D  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\Multiplexacion\
+
+Project Files:
+    multiplexacion.c                                        [29-nov.-21 21:59  CRC=DA77FFC3]
+    multiplexacion.h                                        [29-nov.-21 21:25  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F627A.h           [08-sep.-15 14:14  CRC=1EA52415]
+
+Source signature=17C247ED
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=B3B5
+
+Units:
+    multiplexacion (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   multiplexacion.xsym
+    Errors:      multiplexacion.err
+    Ext Symbols: multiplexacion.esym
+    INHX8:       multiplexacion.hex
+    Symbols:     multiplexacion.sym
+    List:        multiplexacion.lst
+    Debug/COFF:  multiplexacion.cof
+    Project:     multiplexacion.ccspjt
+    Call Tree:   multiplexacion.tre
+    Statistics:  multiplexacion.STA

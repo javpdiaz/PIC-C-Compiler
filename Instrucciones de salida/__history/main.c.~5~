@@ -1,0 +1,19 @@
+#include <main.h>
+#include <16f627a.h>
+
+void main()
+{
+
+   TRISB = 0xFE;
+
+   while(TRUE)
+   {
+
+      PORTB = 0x01;
+      delay_ms(2000);
+      PORTB = 0x00;
+      delay_ms(2000);
+
+   }
+
+}

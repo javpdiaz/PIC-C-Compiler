@@ -1,0 +1,53 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  main
+000004  @cinit1
+000009  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\Comparador\
+
+Project Files:
+    comparador.c                                            [01-ene.-22 21:39  CRC=AB958B81]
+    comparador.h                                            [01-ene.-22 19:55  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F627A.h           [08-sep.-15 14:14  CRC=1EA52415]
+
+Source signature=E8DFD3AB
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=8E6C
+
+Units:
+    comparador (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   comparador.xsym
+    Errors:      comparador.err
+    Ext Symbols: comparador.esym
+    INHX8:       comparador.hex
+    Symbols:     comparador.sym
+    List:        comparador.lst
+    Debug/COFF:  comparador.cof
+    Project:     comparador.ccspjt
+    Call Tree:   comparador.tre
+    Statistics:  comparador.STA

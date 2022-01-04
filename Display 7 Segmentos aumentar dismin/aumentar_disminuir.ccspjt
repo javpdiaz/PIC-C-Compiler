@@ -1,0 +1,44 @@
+[PROJECT]
+Target=aumentar_disminuir.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=aumentar_disminuir.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Display 7 Segmentos aumentar dismin\aumentar_disminuir]
+Type=4
+[mru-list]
+1=aumentar_disminuir.c
+
+[ProjectLog]
+Days=1
+D1=29-11-2021
+D1_L=8
+D1_L1=[60362]Project Opened.
+D1_L2=[60406]Started Editing.
+D1_L3=[60788]Stopped Editing.
+D1_L4=[74609]Started Editing.
+D1_L5=[74965]Stopped Editing.
+D1_L6=[75051]Started Editing.
+D1_L7=[75447]Stopped Editing.
+TotalEdit=4
+TotalDebug=0
+D1_E=4
+D1_D=0
+D1_L8=[77154]Project Closed.
+
+[Opened Files]
+1=aumentar_disminuir.c
+t1=1
+Count=1
+[aumentar_disminuir.c]
+Type=4
+
+[defines]
+buildcount=2
+[Units]
+Count=1
+1=aumentar_disminuir (main)

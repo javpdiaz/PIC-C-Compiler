@@ -1,0 +1,44 @@
+[PROJECT]
+Target=voltaje_referencia.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=voltaje_referencia.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Voltaje Referencia\voltaje_referencia]
+Type=4
+[mru-list]
+1=voltaje_referencia.c
+
+[ProjectLog]
+Days=1
+D1=01-01-2022
+D1_L=8
+D1_L1=[78287]Project Opened.
+D1_L2=[79335]Started Editing.
+D1_L3=[80197]Stopped Editing.
+TotalEdit=11
+TotalDebug=0
+D1_E=11
+D1_D=0
+D1_L4=[84462]Project Closed.
+D1_L5=[84557]Project Opened.
+D1_L6=[84639]Started Editing.
+D1_L7=[84939]Stopped Editing.
+D1_L8=[85175]Project Closed.
+
+[Opened Files]
+1=voltaje_referencia.c
+t1=1
+Count=1
+[voltaje_referencia.c]
+Type=4
+
+[defines]
+buildcount=23
+[Units]
+Count=1
+1=voltaje_referencia (main)

@@ -1,0 +1,107 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+020-021 @sprintf_string
+022     contador
+023-02A figura1
+02B-032 figura2
+033     lcd_init.i
+033     @PRINTF_U_541.P1
+033-034 CGRAM_create_char.new_char
+033     CGRAM_position.p
+033     CGRAM_putc.n
+033     lcd_clear.@SCRATCH1
+033     MAIN.@SCRATCH1
+034     @PRINTF_U_541.P1
+034     lcd_init.@SCRATCH1
+034     CGRAM_position.@SCRATCH1
+035     @DIV88.P1
+035     lcd_putc.c
+035     CGRAM_create_char.cg
+036     @DIV88.P1
+036     lcd_gotoxy.x
+036     @delay_ms1.P1
+036     CGRAM_create_char.@SCRATCH1
+037     send_byte_data.address_lcd
+037     lcd_gotoxy.y
+037     @DIV88.@SCRATCH1
+038     lcd_gotoxy.address
+038     send_byte_data.n
+039     lcd_gotoxy.@SCRATCH1
+039     send_byte_data.@SCRATCH1
+03A     lcd_send_byte.address
+03A     send_D7_D4.address_lcd
+03B     lcd_send_byte.n
+03B     send_D7_D4.nibble_lcd
+03C     lcd_send_byte.@SCRATCH1
+03C     send_D7_D4.@SCRATCH1
+03D     lcd_send_nibble.nibble
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  @const547.call
+000012  @const570.call
+00001F  @delay_ms1
+000033  lcd_send_nibble
+00005F  lcd_send_byte
+000086  lcd_init
+0000B3  send_D7_D4
+000109  send_byte_data
+00011B  CGRAM_position
+000129  CGRAM_create_char
+00013E  lcd_gotoxy
+000150  lcd_putc
+000174  @DIV88
+000189  @PRINTF_U_541
+0001BE  CGRAM_putc
+0001C4  lcd_clear
+0001CF  @cinit1
+0001CF  MAIN
+0001D7  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\LCD 16x2 contador\
+
+Project Files:
+    lcd16x2contador.c                                       [04-dic.-21 14:56  CRC=BE808B0C]
+    lcd16x2contador.h                                       [04-dic.-21 14:36  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16f627a.h           [08-sep.-15 14:14  CRC=1EA52415]
+    C:\Program Files (x86)\PICC\Drivers\LCD_16X2.c          [19-jun.-20 20:32  CRC=F406DE8D]
+
+Source signature=C5336C3B
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=2EA3
+
+Units:
+    lcd16x2contador (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   lcd16x2contador.xsym
+    Errors:      lcd16x2contador.err
+    Ext Symbols: lcd16x2contador.esym
+    INHX8:       lcd16x2contador.hex
+    Symbols:     lcd16x2contador.sym
+    List:        lcd16x2contador.lst
+    Debug/COFF:  lcd16x2contador.cof
+    Project:     lcd16x2contador.ccspjt
+    Call Tree:   lcd16x2contador.tre
+    Statistics:  lcd16x2contador.STA

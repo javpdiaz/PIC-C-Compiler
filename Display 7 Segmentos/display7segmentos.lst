@@ -1,0 +1,138 @@
+CCS PCM C Compiler, Version 5.049, 5967               29-nov.-21 14:58
+
+               Filename:   D:\Electronica\Pic\Project with CCS C Compiler\Display 7 Segmentos\display7segmentos.lst
+
+               ROM used:   77 words (8%)
+                           Largest free fragment is 947
+               RAM used:   17 (8%) at main() level
+                           18 (8%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   018
+0003:  NOP
+.................... #include <display7segmentos.h> 
+.................... #include <16F627A.h> 
+.................... //////////// Standard Header file for the PIC16F627A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F627A 
+....................  
+.................... #list 
+....................  
+.................... #use delay(crystal=20000000) 
+....................  
+....................  
+.................... #fuses HS, NOWDT, NOPUT, NOLVP, NOPROTECT, BROWNOUT 
+.................... #use delay(clock = 20M) 
+0004:  MOVLW  2C
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   017
+000A:  MOVLW  06
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  7B
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  DECFSZ 00,F
+0016:  GOTO   00A
+0017:  GOTO   047 (RETURN)
+.................... #use fast_io(B) 
+....................  
+.................... int display[10] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f}; 
+*
+001E:  MOVLW  3F
+001F:  MOVWF  20
+0020:  MOVLW  06
+0021:  MOVWF  21
+0022:  MOVLW  5B
+0023:  MOVWF  22
+0024:  MOVLW  4F
+0025:  MOVWF  23
+0026:  MOVLW  66
+0027:  MOVWF  24
+0028:  MOVLW  6D
+0029:  MOVWF  25
+002A:  MOVLW  7D
+002B:  MOVWF  26
+002C:  MOVLW  07
+002D:  MOVWF  27
+002E:  MOVLW  7F
+002F:  MOVWF  28
+0030:  MOVLW  6F
+0031:  MOVWF  29
+.................... int contador; 
+....................  
+.................... void main() 
+*
+0018:  MOVF   03,W
+0019:  ANDLW  1F
+001A:  MOVWF  03
+001B:  MOVLW  07
+001C:  MOVWF  1F
+001D:  BCF    03.7
+.................... { 
+....................  
+....................    set_tris_b(0x00); 
+*
+0032:  MOVLW  00
+0033:  BSF    03.5
+0034:  MOVWF  06
+....................  
+....................    while(TRUE) 
+....................    { 
+....................  
+....................       for(contador = 0; contador < 10; contador++) 
+0035:  BCF    03.5
+0036:  CLRF   2A
+0037:  MOVF   2A,W
+0038:  SUBLW  09
+0039:  BTFSS  03.0
+003A:  GOTO   04B
+....................       { 
+....................          output_b(display[contador]); 
+003B:  MOVLW  20
+003C:  ADDWF  2A,W
+003D:  MOVWF  04
+003E:  BCF    03.7
+003F:  MOVF   00,W
+0040:  MOVWF  2B
+0041:  MOVWF  06
+....................          delay_ms(500); 
+0042:  MOVLW  02
+0043:  MOVWF  2B
+0044:  MOVLW  FA
+0045:  MOVWF  2C
+0046:  GOTO   004
+0047:  DECFSZ 2B,F
+0048:  GOTO   044
+0049:  INCF   2A,F
+004A:  GOTO   037
+....................       } 
+004B:  GOTO   036
+....................        
+....................    } 
+....................  
+.................... } 
+004C:  SLEEP
+
+Configuration Fuses:
+   Word  1: 216A   NOWDT NOPUT HS MCLR BROWNOUT NOLVP NOCPD NOPROTECT

@@ -1,0 +1,86 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Lavadora\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=9
+D1=27-11-2021
+D1_L=2
+D1_L1=[49606]Project Opened.
+D1_L2=[70616]Project Closed.
+D2=29-11-2021
+D2_L=6
+D2_L1=[40924]Project Opened.
+D2_L2=[41105]Started Editing.
+D2_L3=[41406]Stopped Editing.
+TotalEdit=5
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L4=[48963]Project Closed.
+D2_L5=[50849]Project Opened.
+D2_L6=[50876]Project Closed.
+D3=04-12-2021
+D3_L=5
+D3_L1=[63881]Project Opened.
+D3_L2=[68761]Started Editing.
+D3_L3=[69062]Stopped Editing.
+D3_L4=[69076]Started Editing.
+D3_L5=[69376]Stopped Editing.
+D4=05-12-2021
+D4_E=1
+D4_D=0
+D4_L=1
+D4_L1=[553]Project Closed.
+D5=07-12-2021
+D5_L=4
+D5_L1=[50383]Project Opened.
+D5_L2=[50504]Project Closed.
+D5_L3=[78369]Project Opened.
+D5_L4=[79917]Project Closed.
+D6=08-12-2021
+D6_L=6
+D6_L1=[61902]Project Opened.
+D6_L2=[61928]Project Closed.
+D6_L3=[62806]Project Opened.
+D6_L4=[69718]Started Editing.
+D6_L5=[69852]Stopped Editing.
+D6_E=3
+D6_D=0
+D6_L6=[69853]Project Closed.
+D7=09-12-2021
+D7_L=3
+D7_L1=[79221]Project Opened.
+D7_L2=[83985]Project Closed.
+D7_L3=[86092]Project Opened.
+D8=10-12-2021
+D8_L=1
+D8_L1=[1055]Project Closed.
+D9=16-12-2021
+D9_L=2
+D9_L1=[58275]Project Opened.
+D9_L2=[58327]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=21
+[Units]
+Count=1
+1=main (main)

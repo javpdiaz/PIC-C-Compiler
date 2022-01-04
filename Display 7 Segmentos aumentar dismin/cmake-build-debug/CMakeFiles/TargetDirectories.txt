@@ -1,0 +1,3 @@
+/cygdrive/d/Electronica/Pic/Project with CCS C Compiler/Display 7 Segmentos aumentar dismin/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/d/Electronica/Pic/Project with CCS C Compiler/Display 7 Segmentos aumentar dismin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/Electronica/Pic/Project with CCS C Compiler/Display 7 Segmentos aumentar dismin/cmake-build-debug/CMakeFiles/Display_7_Segmentos_aumentar_dismin.dir

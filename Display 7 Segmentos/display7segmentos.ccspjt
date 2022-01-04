@@ -1,0 +1,48 @@
+[PROJECT]
+Target=display7segmentos.hex
+Processor_Text=PIC16F627A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=display7segmentos.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Display 7 Segmentos\display7segmentos]
+Type=4
+[mru-list]
+1=display7segmentos.c
+
+[ProjectLog]
+Days=1
+D1=29-11-2021
+D1_L=12
+D1_L1=[48964]Project Opened.
+D1_L2=[48972]Started Editing.
+D1_L3=[49272]Stopped Editing.
+TotalEdit=8
+TotalDebug=0
+D1_E=8
+D1_D=0
+D1_L4=[50849]Project Closed.
+D1_L5=[53116]Project Opened.
+D1_L6=[53120]Project Closed.
+D1_L7=[53261]Project Opened.
+D1_L8=[53292]Project Closed.
+D1_L9=[53305]Project Opened.
+D1_L10=[53326]Started Editing.
+D1_L11=[54070]Stopped Editing.
+D1_L12=[60362]Project Closed.
+
+[Opened Files]
+1=display7segmentos.c
+t1=5
+Count=1
+[display7segmentos.c]
+Type=4
+[Units]
+Count=1
+1=display7segmentos (main)
+
+[defines]
+buildcount=1

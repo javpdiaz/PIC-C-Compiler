@@ -1,0 +1,42 @@
+[PROJECT]
+Target=analog_to_dig.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=analog_to_dig.c
+[Directories]
+Include=
+[D:\Electronica\Pic\Project with CCS C Compiler\Analogico a digital\analog_to_dig]
+Type=4
+[mru-list]
+1=analog_to_dig.c
+
+[ProjectLog]
+Days=1
+D1=07-12-2021
+D1_L=4
+D1_L1=[55883]Project Opened.
+D1_L2=[56058]Started Editing.
+D1_L3=[56661]Stopped Editing.
+TotalEdit=6
+TotalDebug=0
+D1_E=6
+D1_D=0
+D1_L4=[78369]Project Closed.
+
+[Opened Files]
+1=analog_to_dig.c
+t1=1
+Count=1
+2=C:\Program Files (x86)\PICC\Drivers\LCD_16X2.c
+t2=118
+[analog_to_dig.c]
+Type=4
+
+[defines]
+buildcount=3
+[Units]
+Count=1
+1=analog_to_dig (main)

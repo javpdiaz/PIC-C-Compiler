@@ -1,0 +1,194 @@
+CCS PCM C Compiler, Version 5.049, 5967               30-nov.-21 22:27
+
+               Filename:   D:\Electronica\Pic\Project with CCS C Compiler\Multiplexacion contador\contador 0-99.lst
+
+               ROM used:   115 words (11%)
+                           Largest free fragment is 909
+               RAM used:   21 (9%) at main() level
+                           21 (9%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   018
+0003:  NOP
+.................... #include <contador 0-99.h> 
+.................... #include <16F627A.h> 
+.................... //////////// Standard Header file for the PIC16F627A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F627A 
+....................  
+.................... #list 
+....................  
+.................... #use delay(crystal=20000000) 
+0004:  MOVLW  2F
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   017
+000A:  MOVLW  06
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  7B
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  DECFSZ 00,F
+0016:  GOTO   00A
+0017:  RETURN
+....................  
+....................  
+.................... #use standard_io(A) 
+.................... #use fast_io(B) 
+....................  
+.................... #define displayTransistor1 PIN_A0  //control del transistor 1 
+.................... #define displayTransistor2 PIN_A1  //control del transistor 2 
+....................  
+.................... int display[10] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f};  //cátodo comun 
+*
+0020:  MOVLW  3F
+0021:  MOVWF  20
+0022:  MOVLW  06
+0023:  MOVWF  21
+0024:  MOVLW  5B
+0025:  MOVWF  22
+0026:  MOVLW  4F
+0027:  MOVWF  23
+0028:  MOVLW  66
+0029:  MOVWF  24
+002A:  MOVLW  6D
+002B:  MOVWF  25
+002C:  MOVLW  7D
+002D:  MOVWF  26
+002E:  MOVLW  07
+002F:  MOVWF  27
+0030:  MOVLW  7F
+0031:  MOVWF  28
+0032:  MOVLW  6F
+0033:  MOVWF  29
+.................... int unidades = 0; 
+.................... int decenas = 0; 
+....................  
+....................  
+.................... void main() 
+*
+0018:  MOVF   03,W
+0019:  ANDLW  1F
+001A:  MOVWF  03
+001B:  CLRF   2A
+001C:  CLRF   2B
+001D:  MOVLW  07
+001E:  MOVWF  1F
+001F:  BCF    03.7
+.................... { 
+....................  
+....................    set_tris_b(0x00);  //puerto B como salida 
+*
+0034:  MOVLW  00
+0035:  BSF    03.5
+0036:  MOVWF  06
+....................  
+....................    while(TRUE) 
+....................    { 
+....................  
+....................       for (int decenas = 0; decenas < 10; decenas++) 
+0037:  BCF    03.5
+0038:  CLRF   2C
+0039:  MOVF   2C,W
+003A:  SUBLW  09
+003B:  BTFSS  03.0
+003C:  GOTO   071
+....................       { 
+....................          for (int unidades = 0; unidades < 10; unidades++) 
+003D:  CLRF   2D
+003E:  MOVF   2D,W
+003F:  SUBLW  09
+0040:  BTFSS  03.0
+0041:  GOTO   06F
+....................          { 
+....................          	for (int i = 0; i < 30; i++)  //opcional para evitar parpadeo 
+0042:  CLRF   2E
+0043:  MOVF   2E,W
+0044:  SUBLW  1D
+0045:  BTFSS  03.0
+0046:  GOTO   06D
+....................          	{ 
+....................          		output_high(displayTransistor1); 
+0047:  BSF    03.5
+0048:  BCF    05.0
+0049:  BCF    03.5
+004A:  BSF    05.0
+....................          		output_low(displayTransistor2); 
+004B:  BSF    03.5
+004C:  BCF    05.1
+004D:  BCF    03.5
+004E:  BCF    05.1
+....................          		output_b(display[unidades]); 
+004F:  MOVLW  20
+0050:  ADDWF  2D,W
+0051:  MOVWF  04
+0052:  BCF    03.7
+0053:  MOVF   00,W
+0054:  MOVWF  2F
+0055:  MOVWF  06
+....................          		delay_ms(5); 
+0056:  MOVLW  05
+0057:  MOVWF  2F
+0058:  CALL   004
+....................  
+....................          		output_low(displayTransistor1); 
+0059:  BSF    03.5
+005A:  BCF    05.0
+005B:  BCF    03.5
+005C:  BCF    05.0
+....................          		output_high(displayTransistor2); 
+005D:  BSF    03.5
+005E:  BCF    05.1
+005F:  BCF    03.5
+0060:  BSF    05.1
+....................          		output_b(display[decenas]); 
+0061:  MOVLW  20
+0062:  ADDWF  2C,W
+0063:  MOVWF  04
+0064:  BCF    03.7
+0065:  MOVF   00,W
+0066:  MOVWF  2F
+0067:  MOVWF  06
+....................          		delay_ms(5); 
+0068:  MOVLW  05
+0069:  MOVWF  2F
+006A:  CALL   004
+006B:  INCF   2E,F
+006C:  GOTO   043
+....................          	} 
+006D:  INCF   2D,F
+006E:  GOTO   03E
+....................              
+....................          } 
+006F:  INCF   2C,F
+0070:  GOTO   039
+....................       } 
+0071:  GOTO   038
+....................  
+....................    } 
+....................  
+.................... } 
+0072:  SLEEP
+
+Configuration Fuses:
+   Word  1: 2162   NOWDT PUT HS MCLR BROWNOUT NOLVP NOCPD NOPROTECT
