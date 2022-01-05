@@ -1,0 +1,45 @@
+
+ROM used:   46/1024 (4%)
+            46/1024 (4%) including unused fragments
+
+            0.1 Average locations per line
+            4.6 Average locations per statement
+
+RAM used:   5/224 (2%) at main() level
+            5/224 (2%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   29    10 100  Cargador de bateria.c
+    4     0   0  Cargador de bateria.h
+  521     0   0  C:\Program Files (x86)\PICC\Devices\16F627A.h
+----- -----
+  554    10 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     42  91    0    163  3.1  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              10
+    Comments                106
+    Volume (V)              165
+    Difficulty (D)          2.9
+    Effort to implement (E) 476
+    Time to implement (T)   0 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    95
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-003FF    42  978  
+
+
+

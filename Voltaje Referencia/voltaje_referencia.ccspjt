@@ -14,7 +14,7 @@ Type=4
 1=voltaje_referencia.c
 
 [ProjectLog]
-Days=1
+Days=2
 D1=01-01-2022
 D1_L=8
 D1_L1=[78287]Project Opened.
@@ -29,6 +29,10 @@ D1_L5=[84557]Project Opened.
 D1_L6=[84639]Started Editing.
 D1_L7=[84939]Stopped Editing.
 D1_L8=[85175]Project Closed.
+D2=04-01-2022
+D2_L=2
+D2_L1=[53780]Project Opened.
+D2_L2=[56871]Project Closed.
 
 [Opened Files]
 1=voltaje_referencia.c

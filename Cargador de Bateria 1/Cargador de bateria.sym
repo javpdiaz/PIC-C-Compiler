@@ -1,0 +1,53 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  main
+000004  @cinit1
+000009  @cinit2
+
+Project Directory:
+    D:\Electronica\Pic\Project with CCS C Compiler\Cargador de Bateria 1\
+
+Project Files:
+    Cargador de bateria.c                                   [04-ene.-22 21:32  CRC=A371EB0A]
+    Cargador de bateria.h                                   [04-ene.-22 15:47  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F627A.h           [08-sep.-15 14:14  CRC=1EA52415]
+
+Source signature=E0BC3334
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=E25C
+
+Units:
+    Cargador de bateria (main)
+
+Compiler Settings:
+    Processor:      PIC16F627A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Cargador de bateria.xsym
+    Errors:      Cargador de bateria.err
+    Ext Symbols: Cargador de bateria.esym
+    INHX8:       Cargador de bateria.hex
+    Symbols:     Cargador de bateria.sym
+    List:        Cargador de bateria.lst
+    Debug/COFF:  Cargador de bateria.cof
+    Project:     Cargador de bateria.ccspjt
+    Call Tree:   Cargador de bateria.tre
+    Statistics:  Cargador de bateria.STA
