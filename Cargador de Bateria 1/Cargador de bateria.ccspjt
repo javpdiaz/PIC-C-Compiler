@@ -14,7 +14,7 @@ Type=4
 1=Cargador de bateria.c
 
 [ProjectLog]
-Days=1
+Days=3
 D1=04-01-2022
 D1_L=4
 D1_L1=[56871]Project Opened.
@@ -25,6 +25,14 @@ TotalDebug=0
 D1_E=1
 D1_D=0
 D1_L4=[77748]Project Closed.
+D2=06-01-2022
+D2_L=2
+D2_L1=[75181]Project Opened.
+D2_L2=[80314]Project Closed.
+D3=07-01-2022
+D3_L=2
+D3_L1=[63472]Project Opened.
+D3_L2=[64175]Project Closed.
 
 [Opened Files]
 1=Cargador de bateria.c
